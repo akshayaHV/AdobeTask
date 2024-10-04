@@ -35,9 +35,9 @@ async function fetchProductList() {
     }
 }
 
-//bind total products count
+//List of Products count
 function bindResultCount() {
-    let resultCount = `<p class="text-nowrap ml">${productListSection.children.length} Results</p>`;
+    let resultCount = `<p class="text-nowrap ml resultsVal">${productListSection.children.length} Results</p>`;
     let resultCountElem = document.getElementById('resultstxt');
     let mobileResultCountElem = document.getElementById('mobileResultstxt');
     resultCountElem.innerHTML = resultCount;
@@ -47,7 +47,7 @@ function bindResultCount() {
 productListSection.innerHTML = loader;
 fetchProductList();
 
-//add products to container div
+//List of Products
 function addProductsToContainer(data, loardMore = false) {
     if (!loardMore) item = "";
     for (let i = startIndex; i < (endIndex < data.length ? endIndex : data.length); i++) {

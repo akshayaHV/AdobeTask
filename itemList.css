@@ -21,6 +21,10 @@
 .hamburger {
   width: 20px !important;
 }
+.resultsVal{
+  font-size: 1.2em;
+  font-weight: bold;
+}
 
 .filter-wrapper {
   flex-grow: 1;
